@@ -1,9 +1,10 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+
 
 const Useeffect = () => {
   return (
     <div>
-      <h1>Use Effects</h1>
+      <h3>Use Effects</h3>
     </div>
   )
 }
