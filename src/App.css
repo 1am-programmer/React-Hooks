@@ -4,6 +4,12 @@
   padding: 2rem;
   text-align: center;
 }
+.done{
+  display: flex;
+  width: 500px;
+  height: 350px;
+  overflow-y: scroll;
+}
 
 .logo {
   height: 6em;

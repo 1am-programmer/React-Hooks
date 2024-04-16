@@ -4,12 +4,13 @@ import { useState } from 'react'
 const Usestate = () => {
 
   const [count, setCount] = useState(0)
-  //If you're writung complex maths or something, use the function method, because it will only run once i.e
+  //If you're writing complex maths or something, use the function method, because it will only run once i.e
   //  const [count, setCount] = useState(()=>{
   // console.log('run function')
   // return 0
 
   //})
+  const [resourceType, setResourceType] = useState('posts')
 
   function decrement() {
     setCount(prevCount => prevCount - 1)
@@ -35,6 +36,17 @@ const Usestate = () => {
         <span>{count}</span>
         <button onClick={increment}>+</button>
       </div>
+
+     {/* Anotherexample */}
+
+
+      <div>
+      <h4>  Example2</h4>
+        <button onClick={() => setResourceType('posts')}>Posts</button>
+        <button onClick={() => setResourceType('users')}>Users</button>
+        <button onClick={() => setResourceType('comments')}>Comments</button>
+      </div>
+      <p>{resourceType}</p>
 
     </div>
 
