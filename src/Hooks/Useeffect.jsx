@@ -61,7 +61,11 @@ This is commonly used when you want to send data to a server or store it locally
 
 
       
-      <h2> Another example </h2>
+      <h2> Another example :
+<br />
+<span  class='small-font'>Resize your browser, and the number below will change, according to browser size</span>
+        
+      </h2>
       <div>
         {windoWidth}
       </div>
