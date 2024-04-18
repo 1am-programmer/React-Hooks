@@ -2,6 +2,7 @@ import "./App.css";
 import Usestate from "./Hooks/Usestate";
 import Useeffect from "./Hooks/Useeffect";
 import UseRef from "./Hooks/UseRef";
+import UseContext from "./Hooks/UseContext";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Usestate />
       <Useeffect />
       <UseRef />
+      <UseContext />
     </div>
   );
 }
