@@ -1,4 +1,5 @@
 import React, { useState, useReducer } from "react";
+import UseReducerII from "../router/UseReducer2";
 
 const ACTIONS = {
   INCREMENT: "increment",
@@ -69,6 +70,11 @@ const UseReducer = () => {
         <span>{state.count}</span>
         <button onClick={increment}>+</button>
       </div>
+
+      <p className="p-4 mt-6 font-semibold text-2xl">
+        Example 2: Complex use case of Use Reducer, using a Todo App
+      </p>
+      <UseReducerII />
     </div>
   );
 };
