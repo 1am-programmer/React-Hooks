@@ -3,6 +3,7 @@ import Usestate from "./Hooks/Usestate";
 import Useeffect from "./Hooks/Useeffect";
 import UseRef from "./Hooks/UseRef";
 import UseContext from "./Hooks/UseContext";
+import { Link } from "react-router-dom";
 
 function App() {
   return (
@@ -14,10 +15,19 @@ function App() {
         or inside of loops, they cannot be nested, only called at the top level
         of your function. Always called in the same order.
       </p>
-      <Usestate />
-      <Useeffect />
-      <UseRef />
-      <UseContext />
+
+      <Link to="/useState">
+        <button>UseState</button>
+      </Link>
+      <Link to="/useEffect">
+        <button>UseEffect</button>
+      </Link>
+      <Link to="/useRef">
+        <button>UseRef</button>
+      </Link>
+      <Link to="/useContext">
+        <button>UseContext</button>
+      </Link>
     </div>
   );
 }
