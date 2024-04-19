@@ -56,7 +56,7 @@ function App() {
           <button>UseTransition</button>
         </Link>
       </div>
-      <div className="p-5">
+      <div className="p-">
         <Link to="/useImperative">
           <button>UseImperative</button>
         </Link>
