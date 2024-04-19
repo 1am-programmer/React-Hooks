@@ -28,19 +28,42 @@ function App() {
         or inside of loops, they cannot be nested, only called at the top level
         of your function. Always called in the same order.
       </p>
-
-      <Link to="/useState">
-        <button>UseState</button>
-      </Link>
-      <Link to="/useEffect">
-        <button>UseEffect</button>
-      </Link>
-      <Link to="/useRef">
-        <button>UseRef</button>
-      </Link>
-      <Link to="/useContext">
-        <button>UseContext</button>
-      </Link>
+      <div>
+        <Link to="/useState">
+          <button>UseState</button>
+        </Link>
+        <Link to="/useEffect">
+          <button>UseEffect</button>
+        </Link>
+        <Link to="/useRef">
+          <button>UseRef</button>
+        </Link>
+        <Link to="/useContext">
+          <button>UseContext</button>
+        </Link>
+      </div>
+      <div className="p-5">
+        <Link to="/useCallback">
+          <button>UseCallback</button>
+        </Link>
+        <Link to="/useReducer">
+          <button>UseReducer</button>
+        </Link>
+        <Link to="/useLayout">
+          <button>UseLayout</button>
+        </Link>
+        <Link to="/useTransition">
+          <button>UseTransition</button>
+        </Link>
+      </div>
+      <div className="p-5">
+        <Link to="/useImperative">
+          <button>UseImperative</button>
+        </Link>
+        <Link to="/useDeffered">
+          <button>UseDeffered</button>
+        </Link>
+      </div>
     </div>
   );
 }

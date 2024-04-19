@@ -8,7 +8,12 @@ import Usestate from "./Hooks/Usestate.jsx";
 import Useeffect from "./Hooks/Useeffect.jsx";
 import UseRef from "./Hooks/UseRef.jsx";
 import UseContext from "./Hooks/UseContext.jsx";
-
+import UseCallback from "./Hooks/UseCallback.jsx";
+import UseReducer from "./Hooks/UseReducer.jsx";
+import UseLayout from "./Hooks/UseLayout.jsx";
+import UseTransition from "./Hooks/UseTransition.jsx";
+import UseImperative from "./Hooks/UseImperative.jsx";
+import UseDeffered from "./Hooks/UseDeffered.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -29,6 +34,30 @@ const router = createBrowserRouter([
   {
     path: "/useContext",
     element: <UseContext />,
+  },
+  {
+    path: "/useCallback",
+    element: <UseCallback />,
+  },
+  {
+    path: "/useReducer",
+    element: <UseReducer />,
+  },
+  {
+    path: "/useLayout",
+    element: <UseLayout />,
+  },
+  {
+    path: "/useTransition",
+    element: <UseTransition />,
+  },
+  {
+    path: "/useImperative",
+    element: <UseImperative />,
+  },
+  {
+    path: "/useDeffered",
+    element: <UseDeffered />,
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
