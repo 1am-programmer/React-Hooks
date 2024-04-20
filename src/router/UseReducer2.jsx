@@ -24,9 +24,14 @@ const UseReducerII = () => {
     //This clears the input after we hit enter
   };
 
+  console.log(todos);
   function reducer(todos, action) {
     switch (action.type) {
       case ACTIONS.ADD_TODO:
+        // if (todos.name.length < 2) {
+        //   alert("Task must be at least 3 characters long");
+        // } else {
+        // }
         return [...todos, newTodo(action.payload.name)];
 
       case ACTIONS.TOGGLE_TODO:
@@ -53,7 +58,6 @@ const UseReducerII = () => {
     return { name: name, id: Math.random(), complete: false };
   }
 
-  console.log(todos);
   return (
     <div>
       <form action="" onSubmit={handleSubmit}>
