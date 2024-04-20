@@ -63,6 +63,9 @@ function App() {
         <Link to="/useDeffered">
           <button>UseDeffered</button>
         </Link>
+        <Link to="/custom">
+          <button>Custom Hook</button>
+        </Link>
       </div>
     </div>
   );

@@ -14,6 +14,7 @@ import UseLayout from "./Hooks/UseLayout.jsx";
 import UseTransition from "./Hooks/UseTransition.jsx";
 import UseImperative from "./Hooks/UseImperative.jsx";
 import UseDeffered from "./Hooks/UseDeffered.jsx";
+import Customhooks from "./Hooks/Customhooks.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
   {
     path: "/useDeffered",
     element: <UseDeffered />,
+  },
+  {
+    path: "/custom",
+    element: <Customhooks />,
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
