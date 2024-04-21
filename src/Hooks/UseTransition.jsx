@@ -44,8 +44,6 @@ const UseTransition = () => {
             return <div key={index}> {item} </div>;
             //Return a div showing each item of the list array
           })}
-
-      {/* <button onClick={() => console.log(list.length)}>hi</button> */}
     </div>
   );
 };
