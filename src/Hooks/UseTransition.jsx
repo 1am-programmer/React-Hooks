@@ -1,22 +1,30 @@
-import React, { useState, useEffect, useTransition } from "react";
+import React, {
+  useState,
+  useTransition,
+  // startTransition,
+} from "react";
+//Start Transition is for class based components
 
 const UseTransition = () => {
+  const [isPending, startTransition] = useTransition();
   const [input, setInput] = useState("");
   const [list, setList] = useState([]);
 
   const LIST_SIZE = 20000;
   function handleChange(e) {
-    setInput(e.target.value);
+    setInput(e.target.value); //High priority
+    startTransition(() => {
+      //By using startTransition, we are telling React that this code is not important and can be done in the background
+      const l = [];
+      for (let index = 0; index < LIST_SIZE; index++) {
+        l.push(e.target.value);
 
-    const l = [];
-    for (let index = 0; index < LIST_SIZE; index++) {
-      l.push(e.target.value);
-
-      //l is an array, using the for loop, continue incrementing the index until it is = to LIST_SIZE, which is 20,000
-      //And push what ever is gotten from the input value into the array and render it 20,000 times, when the value of the input changes
-      setList(l);
-      //Let the list array be equal to the l array
-    }
+        //l is an array, using the for loop, continue incrementing the index until it is = to LIST_SIZE, which is 20,000
+        //And push what ever is gotten from the input value into the array and render it 20,000 times, when the value of the input changes
+        setList(l);
+        //Let the list array be equal to the l array
+      }
+    });
   }
 
   return (
@@ -30,10 +38,12 @@ const UseTransition = () => {
       </p>
 
       <input type="text" value={input} onChange={handleChange} />
-      {list.map((item, index) => {
-        return <div key={index}> {item} </div>;
-        //Return a div showing each item of the list array
-      })}
+      {isPending
+        ? "Loading.."
+        : list.map((item, index) => {
+            return <div key={index}> {item} </div>;
+            //Return a div showing each item of the list array
+          })}
 
       {/* <button onClick={() => console.log(list.length)}>hi</button> */}
     </div>
