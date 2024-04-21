@@ -59,4 +59,9 @@ Demonstrate the power and versatility of React Hooks.
 Showcase best practices for building React applications using functional components.
 Provide a hands-on example of how to manage state, side effects, and other common patterns using Hooks.
 
-
+Features:
+State Management with useState: Utilize the useState hook for managing component state.
+Effect Handling with useEffect: Handle side effects, such as data fetching and subscriptions, using the useEffect hook.
+Context API and useContext: Implement global state management and sharing data between components using the Context API and the useContext hook.
+Custom Hooks: Create custom Hooks to encapsulate reusable logic and promote code organization and reusability.
+Optimization Techniques: Implement optimization techniques such as memoization, useCallback, and useMemo to improve performance.
