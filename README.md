@@ -52,3 +52,11 @@ src/
 
 ---
 
+Project Overview:
+This project aims to:
+
+Demonstrate the power and versatility of React Hooks.
+Showcase best practices for building React applications using functional components.
+Provide a hands-on example of how to manage state, side effects, and other common patterns using Hooks.
+
+
