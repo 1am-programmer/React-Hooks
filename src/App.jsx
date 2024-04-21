@@ -60,9 +60,6 @@ function App() {
         <Link to="/useImperative">
           <button>UseImperative</button>
         </Link>
-        <Link to="/useDeffered">
-          <button>UseDeffered</button>
-        </Link>
         <Link to="/custom">
           <button>Custom Hook</button>
         </Link>

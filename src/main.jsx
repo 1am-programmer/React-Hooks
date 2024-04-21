@@ -57,10 +57,6 @@ const router = createBrowserRouter([
     element: <UseImperative />,
   },
   {
-    path: "/useDeffered",
-    element: <UseDeffered />,
-  },
-  {
     path: "/custom",
     element: <Customhooks />,
   },
