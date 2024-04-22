@@ -11,9 +11,9 @@ function ConfirmationModal({ isOpen, onClose }, ref) {
 
   useImperativeHandle(ref, () => {
     return {
-      focusClosebt: () => closeRef.current.focus(),
-      focusConfirmbtn: () => confirmRef.current.focus(),
-      focusDenybtn: () => denyRef.current.focus(),
+      focusCloseBtn: () => closeRef.current.focus(),
+      focusConfirmBtn: () => confirmRef.current.focus(),
+      focusDenyBtn: () => denyRef.current.focus(),
     };
   });
 
