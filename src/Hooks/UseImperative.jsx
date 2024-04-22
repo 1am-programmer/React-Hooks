@@ -1,9 +1,13 @@
 import React, { useState, useRef } from "react";
 import CustomInput from "../router/CustomInput";
+import ConfirmationModal from "../router/ConfirmationModal";
 
 const UseImperative = () => {
   const [value, setValue] = useState("");
   const inputRef = useRef();
+
+  const [open, setOpen] = useState(false);
+  const modalRef = useRef();
   return (
     <div>
       <h2 className="mb-4 text-2xl font-bold">USE IMPERATIVE HANDLE</h2>
@@ -27,6 +31,23 @@ const UseImperative = () => {
 
       <div>
         <h2 className="pt-4 mb-4 text-2xl font-bold">Example 2</h2>
+        <button
+          onClick={() => {
+            setOpen(true);
+          }}
+        >
+          Open
+        </button>
+
+        <button>Focus Close</button>
+        <button>Focus Confirm</button>
+        <button>Focus Deny</button>
+
+        <ConfirmationModal
+          ref={modalRef}
+          isOpen={open}
+          onclose={() => setOpen(false)}
+        />
       </div>
     </div>
   );
