@@ -19,7 +19,12 @@ export default function useLocalStorage(key, initialValue) {
     return getSavedValue(key, initialValue);
   });
 
-  useDebugValue(value);
+  //usedebug.jsx
+  useDebugValue("Nested objects in useDebug");
+  //useDebugValue(slowFunction(value)); //This will be really slow to run so we use this
+  useDebugValue(value, (v) => slowFunction(v)); // This function method will tell react TO NOT RUN THIS CODE, unless
+  // 1. I am in development, 2. I have the chrome developers tool open and ready to see the
+  useDebugValue({ key, initialValue });
   //This will show the value of the Input value variable in the React Dev Tools,.. coming from useDebugValue.jsx
 
   useEffect(() => {
@@ -27,5 +32,9 @@ export default function useLocalStorage(key, initialValue) {
   }, [value]);
   //Only when our value changes, do we want to save it to the local storage
 
+  function slowFunction(value) {
+    for (let index = 0; index < 20000000000; index++) {}
+    return value;
+  }
   return [value, setValue];
 }

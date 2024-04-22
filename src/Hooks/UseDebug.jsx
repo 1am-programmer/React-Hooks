@@ -7,9 +7,17 @@ const UseDebug = () => {
   return (
     <div>
       <h2 className="mb-4 text-2xl font-bold">USE DEBUG VALUE</h2>
-      <p></p>
+      <p>
+        In ReactJS, the useDebugValue hook is used to display custom labels for
+        custom hooks in React DevTools. It's particularly useful for providing
+        additional debugging information about custom hooks when inspecting them
+        in the React DevTools.
+      </p>
 
-      <h2 className="pt-4 mb-4 text-xl font-bold">Example 2</h2>
+      <h2 className="pt-4 mb-4 text-xl font-bold">Example 1</h2>
+      <p className="italic">
+        View in Component section of your react dev tools
+      </p>
 
       <div className="flex gap-2 mb-2">
         <p>First Name:</p>
