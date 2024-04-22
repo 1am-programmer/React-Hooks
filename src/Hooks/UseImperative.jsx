@@ -22,12 +22,17 @@ const UseImperative = () => {
         applications.
       </p>
 
+      <h2 className="pt-4 mb-4 text-2xl font-bold">Example 1</h2>
       <CustomInput
         ref={inputRef}
         value={value}
         onChange={(e) => setValue(e.target.value)}
       />
       <button onClick={() => inputRef.current.alertHI()}>Focus</button>
+      <p className="italic">
+        This button when clicked does not affect the input value, but instead
+        triggers the alert method on the input element.
+      </p>
 
       <div>
         <h2 className="pt-4 mb-4 text-2xl font-bold">Example 2</h2>
@@ -46,7 +51,7 @@ const UseImperative = () => {
         <ConfirmationModal
           ref={modalRef}
           isOpen={open}
-          onclose={() => setOpen(false)}
+          onClose={() => setOpen(false)}
         />
       </div>
     </div>
