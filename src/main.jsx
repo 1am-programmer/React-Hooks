@@ -15,6 +15,7 @@ import UseTransition from "./Hooks/UseTransition.jsx";
 import UseImperative from "./Hooks/UseImperative.jsx";
 import Customhooks from "./Hooks/Customhooks.jsx";
 import UseDebug from "./Hooks/UseDebug.jsx";
+import UseId from "./Hooks/UseId.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -63,6 +64,10 @@ const router = createBrowserRouter([
   {
     path: "/debug",
     element: <UseDebug />,
+  },
+  {
+    path: "/id",
+    element: <UseId />,
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(

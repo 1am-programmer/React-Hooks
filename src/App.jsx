@@ -1,8 +1,5 @@
 import "./App.css";
-import Usestate from "./Hooks/Usestate";
-import Useeffect from "./Hooks/Useeffect";
-import UseRef from "./Hooks/UseRef";
-import UseContext from "./Hooks/UseContext";
+
 import { Link } from "react-router-dom";
 
 function App() {
@@ -65,6 +62,10 @@ function App() {
         </Link>
         <Link to="/debug">
           <button>Use Debug</button>
+        </Link>
+
+        <Link to="/id">
+          <button>Use ID</button>
         </Link>
       </div>
     </div>

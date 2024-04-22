@@ -33,7 +33,7 @@ export default function useLocalStorage(key, initialValue) {
   //Only when our value changes, do we want to save it to the local storage
 
   function slowFunction(value) {
-    for (let index = 0; index < 20000000000; index++) {}
+    for (let index = 0; index < 200; index++) {} //reduced from 20000000000 so the page can load faster
     return value;
   }
   return [value, setValue];
