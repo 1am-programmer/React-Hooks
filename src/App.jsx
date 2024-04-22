@@ -63,6 +63,9 @@ function App() {
         <Link to="/custom">
           <button>Custom Hook</button>
         </Link>
+        <Link to="/debug">
+          <button>Use Debug</button>
+        </Link>
       </div>
     </div>
   );

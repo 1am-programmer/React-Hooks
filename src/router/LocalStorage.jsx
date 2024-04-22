@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useDebugValue } from "react";
 
 function getSavedValue(key, initialValue) {
   //Key is what we want to store this as in the local storage
@@ -18,6 +18,10 @@ export default function useLocalStorage(key, initialValue) {
   const [value, setValue] = useState(() => {
     return getSavedValue(key, initialValue);
   });
+
+  useDebugValue(value);
+  //This will show the value of the Input value variable in the React Dev Tools,.. coming from useDebugValue.jsx
+
   useEffect(() => {
     localStorage.setItem(key, JSON.stringify(value)); //We can only send JSON to localStorage
   }, [value]);

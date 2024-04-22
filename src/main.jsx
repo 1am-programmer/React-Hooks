@@ -14,6 +14,7 @@ import UseLayout from "./Hooks/UseLayout.jsx";
 import UseTransition from "./Hooks/UseTransition.jsx";
 import UseImperative from "./Hooks/UseImperative.jsx";
 import Customhooks from "./Hooks/Customhooks.jsx";
+import UseDebug from "./Hooks/UseDebug.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
   {
     path: "/custom",
     element: <Customhooks />,
+  },
+  {
+    path: "/debug",
+    element: <UseDebug />,
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
