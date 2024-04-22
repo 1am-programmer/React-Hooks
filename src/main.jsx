@@ -13,7 +13,6 @@ import UseReducer from "./Hooks/UseReducer.jsx";
 import UseLayout from "./Hooks/UseLayout.jsx";
 import UseTransition from "./Hooks/UseTransition.jsx";
 import UseImperative from "./Hooks/UseImperative.jsx";
-import UseDeffered from "./Hooks/UseDeffered.jsx";
 import Customhooks from "./Hooks/Customhooks.jsx";
 const router = createBrowserRouter([
   {
